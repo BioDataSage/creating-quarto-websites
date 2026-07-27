@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+
+execute:
+  execute-dir: project
   
 website:
   title: "OTTR Template Website"
