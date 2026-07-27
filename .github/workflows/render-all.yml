@@ -70,6 +70,10 @@ jobs:
           Rscript -e "bookdown::render_book('index.Rmd', output_format = 'all');
           file.copy(from = 'assets', to = 'docs/assets', overwrite = TRUE)"
 
+      - name: Install Python dependencies for Quarto
+        if: ${{needs.yaml-check.outputs.toggle_website == 'quarto' }}
+        run: python3 -m pip install jupyter pyyaml
+
       - name: Render quarto version
         id: quarto
         if: ${{needs.yaml-check.outputs.toggle_website == 'quarto' }}
@@ -133,6 +137,10 @@ jobs:
         if: ${{needs.yaml-check.outputs.toggle_website == 'rmd' }}
         id: tocless_rmd
         run: Rscript -e "ottrpal::render_without_toc()"
+
+      - name: Install Python dependencies for Quarto
+        if: ${{needs.yaml-check.outputs.toggle_website == 'quarto' }}
+        run: python3 -m pip install jupyter pyyaml
 
       - name: Run TOC-less version of render -- quarto version
         id: tocless_quarto

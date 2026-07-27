@@ -120,6 +120,9 @@ jobs:
         shell: bash
 
        # Now we want to render all the html files from the qmd files
+      - name: Install Python dependencies for Quarto
+        run: python3 -m pip install jupyter pyyaml
+
       - name: Run render html
         id: site
         run: quarto render 
