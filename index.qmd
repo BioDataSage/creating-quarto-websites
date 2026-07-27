@@ -45,11 +45,3 @@ format:
 
 {{< include /sections/4c-command-line.qmd >}}
 :::
-
-{{< include /sections/NOTE-workflow.qmd >}}
-
-{{< include /sections/5-publish-with-github-pages.qmd >}}
-
-{{< include /sections/6-change-stuff.qmd >}}
-
-{{< include /sections/7-looking-forward.qmd >}}
