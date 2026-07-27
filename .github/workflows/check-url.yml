@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -33,7 +33,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v7
       with:
         fetch-depth: 0
 
@@ -92,7 +92,7 @@ jobs:
 
     - name: If too many URL errors, then make an issue
       if: ${{ steps.check-report.outputs.error_num >= 1 && steps.find-issue.outputs.issue_existence == 0}}
-      uses: JasonEtco/create-an-issue@v2
+      uses: JasonEtco/create-an-issue@v2.9.2
       with:
         filename: .github/ISSUE_TEMPLATE/url-error.md
       env:
