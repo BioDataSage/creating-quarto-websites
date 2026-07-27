@@ -11,6 +11,6 @@ When we initialize our R project, `mysite/` (or `yourGitHubUsername.github.io/`)
 #| echo: false
 #| fig-align: "center"
 #| out-width: "100%"
-knitr::include_graphics("media/git-repo-ex.png")
+knitr::include_graphics(here::here("media", "git-repo-ex.png"))
 ```
 :::

@@ -138,8 +138,8 @@ iii. **Push** your files to the remote repository (on GitHub) by running `git pu
 #| fig-subcap: 
 #|  - "Your website's URL will appear at the top of the page once you've configured GitHub pages to host your Quarto site"
 #|  - "A hosted Quarto website (notice the URL)! Now time to customize and add content."
-knitr::include_graphics("media/gh-pages.png")
-knitr::include_graphics("media/rendered_site.png")
+knitr::include_graphics(here::here("media", "gh-pages.png"))
+knitr::include_graphics(here::here("media", "rendered_site.png"))
 ```
 
 ::: {.callout-tip collapse="true"}
@@ -149,6 +149,6 @@ See deployment status, time of each deployment, and how long it took to deploy e
 
 ```{r}
 #| echo: false
-knitr::include_graphics("media/actions-tab.png")
+knitr::include_graphics(here::here("media", "actions-tab.png"))
 ```
 :::

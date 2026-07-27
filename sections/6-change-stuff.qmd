@@ -40,7 +40,7 @@ This is the default / expected name given to website landing / home pages. If yo
 #| echo: false
 #| fig-align: center
 #| fig-cap: "My Quarto website home page, which now includes my name and some content, but isn't super visually pleasing..."
-knitr::include_graphics("media/no-about-page.png")
+knitr::include_graphics(here::here("media", "no-about-page.png"))
 ```
 
 ::: {.callout-tip collapse="true"}
@@ -99,7 +99,7 @@ about:
 #| echo: false
 #| fig-align: center
 #| fig-cap: "My Quarto website after updating my landing page with the built-in `jolla` template, adding an image, and linked buttons. Overall, a big improvement! However, our text is a bit squished in the center of the page -- we'll fix then in the next step."
-knitr::include_graphics("media/with-about-page.png")
+knitr::include_graphics(here::here("media", "with-about-page.png"))
 ```
 
 ::: {.callout-note collapse=true}
@@ -152,7 +152,7 @@ format:
 #| echo: false
 #| fig-align: center
 #| fig-cap: "My website with a new title (see top left corner) and with `page-layout` set to `full`, so that content doesn't appear as squished in the middle of the page."
-knitr::include_graphics("media/full-page.png")
+knitr::include_graphics(here::here("media", "full-page.png"))
 ```
 
 ::: {.callout-note collapse="true"}
@@ -162,7 +162,7 @@ Going for a more minimalist look? You can comment out (or remove) the `title` op
 #| echo: false
 #| fig-align: center
 #| fig-cap: ""
-knitr::include_graphics("media/no-page-title.png")
+knitr::include_graphics(here::here("media", "no-page-title.png"))
 ```
 :::
 
@@ -235,8 +235,8 @@ format:
 #|  - "A newly added navbar page, titled \"All of my favorite resources!\""
 #|  - "A newly added navbar page, with an alternate navbar title (set using the `href` and `text` options together in `_quarto.yml`)"
 
-knitr::include_graphics("media/resources-page.png")
-knitr::include_graphics("media/resources-page-renamed.png")
+knitr::include_graphics(here::here("media", "resources-page.png"))
+knitr::include_graphics(here::here("media", "resources-page-renamed.png"))
 ```
 
 ### {{< fa arrow-right title="An arrow pointing to the right" >}} **Change the theme** 
@@ -257,7 +257,7 @@ format:
 #| echo: false
 #| fig-align: center
 #| fig-cap: "With theme, 'minty', a prebuilt [Bootswatch theme](https://bootswatch.com/)"
-knitr::include_graphics("media/light.png")
+knitr::include_graphics(here::here("media", "light.png"))
 ```
 
 *or* supply both a dark and a light theme for users to toggle between:
@@ -278,7 +278,7 @@ format:
 #| echo: false
 #| fig-align: center
 #| fig-cap: "With light / dark theme options applied; here, the `dark` theme, which is set to the prebuilt [Bootswatch theme](https://bootswatch.com/) theme, `slate`, is toggled on."
-knitr::include_graphics("media/dark.png")
+knitr::include_graphics(here::here("media", "dark.png"))
 ```
 
 ::: callout-important
