@@ -15,12 +15,6 @@ book:
   
   chapters:
     - index.qmd
-    - intro.qmd
-    - part: "First Section"
-      chapters:
-        - first-section-new-chapter.qmd
-    - conclusion.qmd
-    - references.qmd
   
   sidebar: 
     logo: "img/logo.png"
