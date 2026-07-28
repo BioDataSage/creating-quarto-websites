@@ -54,7 +54,7 @@ If you'd like to take Positron for a test drive but aren't sure where to start, 
 ```{r}
 #| echo: false
 #| fig-align: center
-knitr::include_graphics("media/positron-command-palette-quarto-proj.png")
+knitr::include_graphics(here::here("media", "positron-command-palette-quarto-proj.png"))
 ```
 
 {{< include /sections/NOTE-command-palette.qmd >}}
@@ -65,8 +65,8 @@ Select **Website Project**, then choose a directory to save your project to. Cli
 #| echo: false
 #| layout-ncol: 2
 #| column: page
-knitr::include_graphics("media/positron-website-project.png")
-knitr::include_graphics("media/positron-choose-project-directory.png")
+knitr::include_graphics(here::here("media", "positron-website-project.png"))
+knitr::include_graphics(here::here("media", "positron-choose-project-directory.png"))
 ```
 
 {{< include /sections/NOTE-jargon.qmd >}}
@@ -78,7 +78,7 @@ Finally, fill out the **Project Directory Name** field -- this is the name of yo
 ```{r}
 #| echo: false
 #| fig-align: center
-knitr::include_graphics("media/positron-directory-name.png")
+knitr::include_graphics(here::here("media", "positron-directory-name.png"))
 ```
 
 {{< include /sections/TIP-organizing-repos.qmd >}}
@@ -88,7 +88,7 @@ knitr::include_graphics("media/positron-directory-name.png")
 ```{r}
 #| echo: false
 #| fig-align: center
-knitr::include_graphics("media/positron-explorer.png")
+knitr::include_graphics(here::here("media", "positron-explorer.png"))
 ```
 
 {{< include /sections/NOTE-tour.qmd >}}
@@ -109,7 +109,7 @@ iii. Quit your preview by pressing `Ctrl` + `C` in your Terminal or by clicking 
 #| echo: false
 #| fig-align: "center"
 #| out-width: "100%"
-knitr::include_graphics("media/positron-preview.png")
+knitr::include_graphics(here::here("media", "positron-preview.png"))
 ```
 
 ## **{{< fa terminal title="terminal symbol, |>" >}} Command line / Terminal**
@@ -128,7 +128,7 @@ ii. Quit your preview by pressing `Ctrl` + `C` in your Terminal
 #| echo: false
 #| fig-align: "center"
 #| out-width: "100%"
-knitr::include_graphics("media/positron-preview-browser.png")
+knitr::include_graphics(here::here("media", "positron-preview-browser.png"))
 ```
 
 :::
@@ -151,7 +151,7 @@ i. Open the **Source Control** menu, then click the **Initialize Repository** bu
 #| echo: false
 #| fig-align: "center"
 #| out-width: "100%"
-knitr::include_graphics("media/positron-initialize-git-repo.png")
+knitr::include_graphics(here::here("media", "positron-initialize-git-repo.png"))
 ```
 
 ii. **Stage** your files by clicking the **+** button next to the Changes log in the Source Control menu (or hover over individual files to separately stage them), add a **commit message**, and **commit** them by clicking the **Commit** button
@@ -161,7 +161,7 @@ ii. **Stage** your files by clicking the **+** button next to the Changes log in
 #| echo: false
 #| fig-align: "center"
 #| out-width: "100%"
-knitr::include_graphics("media/positron-initial-commit.png")
+knitr::include_graphics(here::here("media", "positron-initial-commit.png"))
 ```
 
 <!-- **Pros:**
@@ -185,7 +185,7 @@ i. Because `{usethis}` is an R package, we'll need to first start an R interpret
 #| echo: false
 #| fig-align: "center"
 #| out-width: "100%"
-knitr::include_graphics("media/positron-start-session.png")
+knitr::include_graphics(here::here("media", "positron-start-session.png"))
 ```
 
 ii. Install the [`{usethis}`](https://usethis.r-lib.org/index.html){target="_blank"} package (if you don't already have it) by running the following in your console:
@@ -215,7 +215,7 @@ usethis::use_git()
 
 ```{r}
 #| echo: false
-knitr::include_graphics("media/positron-graph-initial-commit.png")
+knitr::include_graphics(here::here("media", "positron-graph-initial-commit.png"))
 ```
 
 <!-- **Pros:**
@@ -337,7 +337,7 @@ ii. Click either the **Publish Branch** button (under **Changes**), or the cloud
 
 ```{r}
 #| echo: false
-knitr::include_graphics("media/positron-create-remote.png")
+knitr::include_graphics(here::here("media", "positron-create-remote.png"))
 ```
 
 ## **{{< fa brands r-project title="R programming language icon" >}} `{usethis}`**
@@ -355,7 +355,7 @@ usethis::use_github()
 #| echo: false
 #| out-width: "100%"
 #| fig-align: "center"
-knitr::include_graphics("media/mysite-remote.png")
+knitr::include_graphics(here::here("media", "mysite-remote.png"))
 ```
 
 ## **{{< fa terminal title="terminal symbol, |>" >}} Command line / Terminal**
@@ -376,7 +376,7 @@ ii. **Connect your remote (GitHub) repository to your local git repository.** Yo
 #| echo: false
 #| out-width: "100%"
 #| fig-align: "center"
-knitr::include_graphics("media/GH_quick_setup_options.png")
+knitr::include_graphics(here::here("media", "GH_quick_setup_options.png"))
 ```
 
 {{< include /sections/NOTE-new-remote-repo-setup.qmd >}}
@@ -408,7 +408,7 @@ iii. **Refresh your GitHub repository (in your web browser)** to see that your u
 #| echo: false
 #| fig-align: "center"
 #| out-width: "100%"
-knitr::include_graphics("media/mysite-remote-cli.png")
+knitr::include_graphics(here::here("media", "mysite-remote-cli.png"))
 ```
 
 iv. **(Optional) Add `.gitignore`, `LICENSE`, `README.md` files, which we chose not to initialize our remote repository with**. The `touch` command can be used to create any file type that we want (just make sure you're in the desired location -- typically, you want to create these in your project's root directory). For example:

@@ -20,7 +20,7 @@ format:
 ```{r}
 #| echo: false
 #| fig-align: center
-knitr::include_graphics("media/vRStudio1.png")
+knitr::include_graphics(here::here("media", "vRStudio1.png"))
 ```
 
 Choose **New Directory**, then **Quarto Website.**
@@ -29,8 +29,8 @@ Choose **New Directory**, then **Quarto Website.**
 #| echo: false
 #| layout-ncol: 2
 #| column: page
-knitr::include_graphics("media/vRStudio2.png")
-knitr::include_graphics("media/vRStudio3.png")
+knitr::include_graphics(here::here("media", "vRStudio2.png"))
+knitr::include_graphics(here::here("media", "vRStudio3.png"))
 ```
 
 {{< include /sections/NOTE-jargon.qmd >}}
@@ -44,7 +44,7 @@ And finally, fill out the **Directory name:** field -- this is the name of your 
 ```{r}
 #| echo: false
 #| fig-align: center
-knitr::include_graphics("media/vRStudio4.png")
+knitr::include_graphics(here::here("media", "vRStudio4.png"))
 ```
 
 You should now see a folder called `mysite` (or whatever you named your Quarto project) with a series of files (`_quarto.yml`, `about.qmd`, `index.qmd`, `styles.css`) that provide the scaffolding for your website in the **Files** tab (in the bottom right panel in RStudio, if you haven't altered the pane layout).
@@ -54,7 +54,7 @@ You should now see a folder called `mysite` (or whatever you named your Quarto p
 ```{r}
 #| echo: false
 #| fig-align: center
-# knitr::include_graphics("media/mysite_scaffolding.png")
+# knitr::include_graphics(here::here("media", "mysite_scaffolding.png"))
 ```
 
 2. **Preview your very basic, but functional website** by typing the following command in the Terminal:
@@ -71,7 +71,7 @@ quarto preview
 #| echo: false
 #| fig-align: "center"
 #| out-width: "100%"
-knitr::include_graphics("media/preview-R.png")
+knitr::include_graphics(here::here("media", "preview-R.png"))
 ```
 
 <!-- ::: {.center-text .gray-text} -->
@@ -102,7 +102,7 @@ Choose **yes** when asked if it's okay to commit any uncommitted files. If asked
 #| echo: false
 #| fig-align: center
 #| fig-cap: "Notice the Git tab appear (here, in the top right pane) upon restarting RStudio."
-knitr::include_graphics("media/git-tab.png")
+knitr::include_graphics(here::here("media", "git-tab.png"))
 ```
 
 {{< include /sections/NOTE-git-repo.qmd >}}
@@ -149,7 +149,7 @@ usethis::use_github()
 #| echo: false
 #| fig-align: center
 #| fig-cap: "After running `usethis::use_github()` your browser window should open up to your new GitHub repository and look similar to the browser above."
-knitr::include_graphics("media/mysite-remote.png")
+knitr::include_graphics(here::here("media", "mysite-remote.png"))
 ```
 
 {{< include /sections/NOTE-git-github.qmd >}}

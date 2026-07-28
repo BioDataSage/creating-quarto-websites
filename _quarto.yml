@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: docs
+
+execute:
+  execute-dir: project
+  
+website:
+  title: "OTTR Template Website"
+  navbar:
+    left:
+    - text: ""
+      href: index.qmd
+      icon: fa-home
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true

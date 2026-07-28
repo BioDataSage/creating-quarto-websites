@@ -40,8 +40,8 @@ quarto create-project mysite --type website
 #| fig-subcap: 
 #|  - "Use `pwd` to see your current working directory. Use `cd` to change directories."
 #|  - "Create a new quarto project using the `quarto create-project your_project_name --type website` commands."
-knitr::include_graphics("media/pwd_cd.png")
-knitr::include_graphics("media/CLI_create_website.png")
+knitr::include_graphics(here::here("media", "pwd_cd.png"))
+knitr::include_graphics(here::here("media", "CLI_create_website.png"))
 ```
 
 If you `cd` into your new `mysite` directory, and use the `ls` command to list out all the contents of that directory, you should see a series of files (`_quarto.yml`, `about.qmd`, `index.qmd`, `styles.css`) that provide the scaffolding for your website. For example:
@@ -65,7 +65,7 @@ Alternatively, you can use Finder (Mac) or Windows Explorer (Windows) to view yo
 
 ```{r}
 #| echo: false
-knitr::include_graphics("media/mysite_finder.png")
+knitr::include_graphics(here::here("media", "mysite_finder.png"))
 ```
 
 {{< include /sections/NOTE-tour.qmd >}}
@@ -84,7 +84,7 @@ Your site preview should open up in your browser. Quit your preview by pressing 
 #| echo: false
 #| fig-align: "center"
 #| out-width: "100%"
-knitr::include_graphics("media/preview-cli.png")
+knitr::include_graphics(here::here("media", "preview-cli.png"))
 ```
 
 ::: {.callout-tip collapse="true"}
@@ -96,7 +96,7 @@ Running `quarto preview` launches a preview of your website in a browser window.
 #| echo: false
 #| out-width: "80%"
 #| fig-align: "center"
-#knitr::include_graphics("media/quarto-preview.gif")
+#knitr::include_graphics(here::here("media", "quarto-preview.gif"))
 ```
 
 You can also preview your website from different locations using file paths. You'll need to supply the path to your website directory when previewing from a different location. For example, if my Quarto website directory is at `Users/samanthacsik/git/mysite`, but I am one directory above in `Users/samanthacsik/git`, I can run `quarto preview mysite`. Alternatively I could provide the full path `quarto preview User/samanthacsik/git/mysite` or relative path `quarto preview ~/git/mysite`, no matter which directory I'm currently in.
@@ -208,7 +208,7 @@ Doing so now can lead to merge conflicts. We can add them after our local and re
 
 ```{r}
 #| echo: false
-knitr::include_graphics("media/GH_quick_setup_options.png")
+knitr::include_graphics(here::here("media", "GH_quick_setup_options.png"))
 ```
 
 {{< include /sections/NOTE-new-remote-repo-setup.qmd >}}
@@ -240,7 +240,7 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 #| echo: false
 #| fig-align: "center"
 #| out-width: "100%"
-knitr::include_graphics("media/mysite-remote-cli.png")
+knitr::include_graphics(here::here("media", "mysite-remote-cli.png"))
 ```
 
 12. **(Optional) Add `.gitignore`, `LICENSE`, `README.md` files, which we chose not to initialize our remote repository with**. The `touch` command can be used to create any file type that we want (just make sure you're in the desired location -- typically, you want to create these in your project's root directory). For example:

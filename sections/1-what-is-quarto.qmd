@@ -34,7 +34,7 @@ There are some slight differences to be aware of:
 #| echo: false
 #| fig-align: center
 #| out-width: "100%"
-knitr::include_graphics("media/rmd-vs-qmd.png")
+knitr::include_graphics(here::here("media", "rmd-vs-qmd.png"))
 ```
 
 They also look pretty similar when knitted/rendered. Below is a side-by-side comparison of a knitted `.rmd` file and a rendered `.qmd` file (both as `.html` files):
@@ -43,7 +43,7 @@ They also look pretty similar when knitted/rendered. Below is a side-by-side com
 #| echo: false
 #| fig-align: center
 #| out-width: "100%"
-knitr::include_graphics("media/rmd-vs-qmd-output.png")
+knitr::include_graphics(here::here("media", "rmd-vs-qmd-output.png"))
 ```
 :::
 
@@ -51,7 +51,7 @@ knitr::include_graphics("media/rmd-vs-qmd-output.png")
 #| echo: false
 #| fig-align: center
 #| fig-alt: "A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto."
-knitr::include_graphics("media/quarto_schematic.png")
+knitr::include_graphics(here::here("media", "quarto_schematic.png"))
 ```
 
 ::: {.center-text .small-text}
