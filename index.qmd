@@ -44,4 +44,4 @@ format:
 ## **{{< fa terminal title="terminal symbol, |>" >}} Command line**
 
 {{< include /sections/4c-command-line.qmd >}}
-:::
+::: 
